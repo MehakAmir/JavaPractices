@@ -1,0 +1,23 @@
+package casting;
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class  Upcasting  {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        
+     
+        Animal animal = dog;  // Implicit upcasting
+        
+        animal.sound();  
+    }
+}
